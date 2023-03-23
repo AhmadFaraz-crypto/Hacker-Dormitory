@@ -1,0 +1,16 @@
+<testsuites name="jest tests" tests="6" failures="0" time="0.933">
+  <testsuite name="Hacker Dormitory" errors="0" failures="0" skipped="0" timestamp="2023-03-23T11:25:53" time="0.933" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.022">
+    </testcase>
+    <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.003">
+    </testcase>
+    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.005">
+    </testcase>
+    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.004">
+    </testcase>
+    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.002">
+    </testcase>
+    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.006">
+    </testcase>
+  </testsuite>
+</testsuites>

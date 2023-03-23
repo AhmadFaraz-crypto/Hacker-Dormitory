@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import ResidentsList from './components/ResidentList';
+import Search from './components/Search';
+import Error from './components/Error';
+import 'h8k-components';
 
+const title = "Hacker Dormitory";
 function App() {
+  const [residentList, setResidentList] = useState([]);
+  const [error, setError] = useState('');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h8k-navbar header={title}></h8k-navbar>
+      <div className="layout-column justify-content-center align-items-center w-50 mx-auto">
+        <Search residentList={residentList} setResidentList={setResidentList} setError={setError} />
+        {error && <Error error={error} />}
+        <ResidentsList residentList={residentList} />
+      </div>
     </div>
   );
 }
